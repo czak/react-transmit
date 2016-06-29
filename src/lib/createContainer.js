@@ -5,7 +5,7 @@
 
 var isRootContainer = require("./isRootContainer");
 var promiseProxy    = require("./promiseProxy");
-var React           = require("./react");
+var React           = require("react");
 var assignProperty  = require("./assignProperty");
 
 /**
