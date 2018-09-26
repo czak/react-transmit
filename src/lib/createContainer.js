@@ -6,6 +6,8 @@
 var isRootContainer = require("./isRootContainer");
 var promiseProxy    = require("./promiseProxy");
 var React           = require("react");
+var PropTypes       = require("prop-types");
+var createReactClass = require("create-react-class");
 var assignProperty  = require("./assignProperty");
 
 /**
@@ -15,14 +17,14 @@ var assignProperty  = require("./assignProperty");
 module.exports = function (Component, options) {
 	options = arguments[1] || {};
 
-	var Container = React.createClass({
+	var Container = createReactClass({
 		displayName: (Component.displayName || Component.name) + "TransmitContainer",
 		propTypes: {
-			variables:             React.PropTypes.object,
-			onFetch:               React.PropTypes.func,
-			renderLoading:         React.PropTypes.oneOfType([
-				React.PropTypes.element,
-				React.PropTypes.func
+			variables:             PropTypes.object,
+			onFetch:               PropTypes.func,
+			renderLoading:         PropTypes.oneOfType([
+				PropTypes.element,
+				PropTypes.func
 			])
 		},
 		statics: {

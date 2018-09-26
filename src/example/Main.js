@@ -1,12 +1,13 @@
 import React from "react";
 import InlineCss from "react-inline-css";
+import createReactClass from "create-react-class";
 import Transmit from "lib/react-transmit";
 import Newsfeed from "example/Newsfeed";
 
 /**
  * @class Main
  */
-const Main = React.createClass({
+const Main = createReactClass({
 	render () {
 		return (
 			<InlineCss stylesheet={Main.css()} namespace="Main">

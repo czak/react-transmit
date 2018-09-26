@@ -1,11 +1,12 @@
 import React from "react";
 import InlineCss from "react-inline-css";
+import createReactClass from "create-react-class";
 import Transmit from "lib/react-transmit";
 
 /**
  * @class Like
  */
-const Like = React.createClass({
+const Like = createReactClass({
 	render () {
 		/**
 		 * This prop is guaranteed by Transmit.

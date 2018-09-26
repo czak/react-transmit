@@ -1,12 +1,13 @@
 import React from "react";
 import InlineCss from "react-inline-css";
+import createReactClass from "create-react-class";
 import Transmit from "lib/react-transmit";
 import Story from "example/Story";
 
 /**
  * @class Newsfeed
  */
-const Newsfeed = React.createClass({
+const Newsfeed = createReactClass({
 	render () {
 		/**
 		 * This prop could be deferred, see explanation below.

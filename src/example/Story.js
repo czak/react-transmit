@@ -1,5 +1,6 @@
 import React from "react";
 import InlineCss from "react-inline-css";
+import createReactClass from "create-react-class";
 import Transmit from "lib/react-transmit";
 import Like from "example/Like";
 import githubRest from "./githubRest";
@@ -7,7 +8,7 @@ import githubRest from "./githubRest";
 /**
  * @class Story
  */
-const Story = React.createClass({
+const Story = createReactClass({
 	render () {
 		/**
 		 * This prop is guaranteed.
